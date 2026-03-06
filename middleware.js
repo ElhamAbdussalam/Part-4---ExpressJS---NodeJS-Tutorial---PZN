@@ -7,3 +7,11 @@ export const addPoweredHeader = (req, res, next) => {
   res.set("X-Powered-By", "M Elham Abdussalam");
   next();
 };
+
+export const apiKeyMiddleware = (req, res, next) => {
+  if (req.query.apiKey) {
+    next();
+  } else {
+    res.status(401).end();
+  }
+};
