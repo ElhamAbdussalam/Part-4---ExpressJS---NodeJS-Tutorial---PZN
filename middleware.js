@@ -15,3 +15,8 @@ export const apiKeyMiddleware = (req, res, next) => {
     res.status(401).end();
   }
 };
+
+export const requestTImeMiddleware = (req, res, next) => {
+  req.requestTime = Date.now();
+  next();
+};
