@@ -1,5 +1,6 @@
 import express from "express";
 import request from "supertest";
+import mustacheExpress from "mustache-express";
 
 test("Static File", async () => {
   const app = express();
