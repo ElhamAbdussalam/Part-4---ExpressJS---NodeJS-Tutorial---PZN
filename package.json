@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.28.6",
+    "cookie-parser": "^1.4.7",
     "express": "^4.22.1",
     "winston": "^3.19.0",
     "winston-daily-rotate-file": "^5.0.0"
